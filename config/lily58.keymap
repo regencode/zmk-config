@@ -20,10 +20,13 @@
     keymap {
         compatible = "zmk,keymap";
         behaviors {
-            my_mt: mod_tap {
+            my_mt: my_mod_tap {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
                 flavor = "tap-preferred";
                 tapping-term-ms = <200>;
-                display-name = "Mod-Tap";
+                bindings = <&kp>, <&kp>;
+                display-name = "My-Mod-Tap";
             };
         };
 
