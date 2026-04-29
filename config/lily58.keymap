@@ -19,16 +19,10 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        behaviors {
-            my_mt: my_mod_tap {
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                flavor = "tap-preferred";
-                tapping-term-ms = <200>;
-                bindings = <&kp, &kp>;
-                display-name = "My-Mod-Tap";
-            };
-        };
+        &mt {
+            flavor = "tap-preferred";
+            require-prior-idle-ms: <130>;
+        }
 
         default_layer {
             // ------------------------------------------------------------------------------------------------------------
