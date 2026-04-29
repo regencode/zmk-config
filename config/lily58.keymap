@@ -19,9 +19,11 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        &mt {
-            flavor = "tap-preferred";
-            require-prior-idle-ms: <130>;
+        behaviors {
+            &mt {
+                flavor = "tap-preferred";
+                require-prior-idle-ms: <130>;
+            };
         };
 
         default_layer {
