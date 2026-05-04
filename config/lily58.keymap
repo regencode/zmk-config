@@ -51,30 +51,11 @@
             //                     | ALT  | GUI  | LOWER|  ENTER |  | SPACE | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1         &kp N2         &kp N3          &kp N4          &kp N5                                           &kp N6           &kp N7          &kp N8          &kp N9         &kp N0            &kp GRAVE
-&kp TAB    &kp Q          &kp W          &kp E           &kp R           &kp T                                            &kp Y            &kp U           &kp I           &kp O          &kp P             &kp MINUS
-&kp LSHFT  &my_mt LGUI A  &my_mt LALT S  &my_mt LCTRL D  &my_mt LSHFT F  &kp G                                            &kp H            &my_mt RSHFT J  &my_mt RCTRL K  &my_mt RALT L  &my_mt RGUI SEMI  &kp APOS
-&kp LCTRL  &kp Z          &kp X          &kp C           &kp V           &kp B         &kp LBKT                &kp RBKT   &kp N            &kp M           &kp COMMA       &kp DOT        &kp FSLH          &kp PIPE
-                                         &trans          &trans          &lt 3 ESCAPE  &mt LEFT_SHIFT ENTER    &kp SPACE  &lt 1 BACKSPACE  &tmux_leader    &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        raise_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            bindings = <
-&kp F1          &kp F2     &kp F3  &kp F4      &kp F5        &kp F6                                    &kp F7       &kp F8           &kp F9     &kp F10        &kp F11        &kp F12
-&kp TAB         &kp LG(Q)  &kp AT  &kp HASH    &kp LG(R)     &kp PERCENT                               &trans       &kp HOME         &kp PG_UP  &kp PAGE_DOWN  &kp BACKSPACE  &trans
-&kp LEFT_SHIFT  &trans     &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP                              &kp LEFT     &kp DOWN         &kp UP     &kp RIGHT      &kp END        &trans
-&kp LCTRL       &kp LC(C)  &trans  &trans      &trans        &trans        &bootloader    &bootloader  &kp LC(TAB)  &kp LC(LS(TAB))  &kp EQUAL  &kp LBKT       &kp RBKT       &kp BSLH
-                                   &trans      &trans        &trans        &trans         &trans       &trans       &trans           &trans
+&kp ESC    &kp N1         &kp N2         &kp N3          &kp N4          &kp N5                                        &kp N6           &kp N7          &kp N8          &kp N9         &kp N0            &kp GRAVE
+&kp TAB    &kp Q          &kp W          &kp E           &kp R           &kp T                                         &kp Y            &kp U           &kp I           &kp O          &kp P             &kp MINUS
+&kp LSHFT  &my_mt LGUI A  &my_mt LALT S  &my_mt LCTRL D  &my_mt LSHFT F  &kp G                                         &kp H            &my_mt RSHFT J  &my_mt RCTRL K  &my_mt RALT L  &my_mt RGUI SEMI  &kp APOS
+&kp LCTRL  &kp Z          &kp X          &kp C           &kp V           &kp B      &kp LBKT                &kp RBKT   &kp N            &kp M           &kp COMMA       &kp DOT        &kp FSLH          &kp PIPE
+                                         &trans          &tmux_leader    &lt 1 ESC  &mt LEFT_SHIFT ENTER    &kp SPACE  &lt 2 BACKSPACE  &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -94,6 +75,25 @@
 &kp PIPE    &kp N1        &kp N2        &kp N3        &kp NUMBER_4  &kp NUMBER_5                    &kp SLASH      &kp EQUAL  &kp GRAVE  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LS(DOUBLE_QUOTES)
 &kp LCTRL   &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &trans    &trans  &kp BACKSLASH  &kp MINUS  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE
                                         &trans        &trans        &trans        &trans    &trans  &trans         &trans     &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        raise_layer {
+            // ------------------------------------------------------------------------------------------------------------
+            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
+            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
+            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
+            //                     |      |      |      |        |  |       |      |       |       |
+
+            bindings = <
+&kp F1          &kp F2     &kp F3  &kp F4      &kp F5        &kp F6                                    &kp F7       &kp F8           &kp F9     &kp F10        &kp F11        &kp F12
+&kp TAB         &kp LG(Q)  &kp AT  &kp HASH    &kp LG(R)     &kp PERCENT                               &trans       &kp HOME         &kp PG_UP  &kp PAGE_DOWN  &kp BACKSPACE  &trans
+&kp LEFT_SHIFT  &trans     &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP                              &kp LEFT     &kp DOWN         &kp UP     &kp RIGHT      &kp END        &trans
+&kp LCTRL       &kp LC(C)  &trans  &trans      &trans        &trans        &bootloader    &bootloader  &kp LC(TAB)  &kp LC(LS(TAB))  &kp EQUAL  &kp LBKT       &kp RBKT       &kp BSLH
+                                   &trans      &trans        &trans        &trans         &trans       &trans       &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
