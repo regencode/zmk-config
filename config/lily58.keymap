@@ -109,7 +109,7 @@
 &kp TAB         &trans  &trans  &trans  &trans  &trans                              &trans          &mkp MB1         &mkp MB2      &mkp MCLK        &kp BACKSPACE  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans                              &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp END        &trans
 &kp LCTRL       &trans  &trans  &trans  &trans  &trans  &bootloader    &bootloader  &kp LC(TAB)     &kp LC(LS(TAB))  &kp EQUAL     &kp LBKT         &kp RBKT       &kp BSLH
-                                &trans  &trans  &mo 4   &trans         &trans       &trans          &trans           &trans
+                                &trans  &trans  &trans  &trans         &trans       &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
