@@ -2,25 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: gpeye
-      url-base: https://github.com/GPeye
-    - name: tokyo2006
-      url-base: https://github.com/tokyo2006
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
+    - name: sgomezsal
+      url-base: https://github.com/sgomezsal
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: mario-peripheral-animation
-      remote: gpeye
-      revision: main 
-    - name: prospector-zmk-module                 # <--- and these
-      remote: tokyo2006                          # <---
-      revision: micro_spi2  
-    - name: zmk-dongle-display
-      remote: englmaxi
+    - name: urchin-peripheral-animation
+      remote: sgomezsal
       revision: main
   self:
     path: config
