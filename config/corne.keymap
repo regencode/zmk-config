@@ -121,7 +121,7 @@
         num_layer {
             bindings = <
 &none  &none         &none         &none      &none           &none    &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMICOLON      &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp APOS           &none
 &none  &none         &none         &none      &none           &none    &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE          &none
                                    &none      &none           &none    &kp MINUS         &kp NUMBER_0  &kp PERIOD
             >;
@@ -131,9 +131,9 @@
 
         sym_layer {
             bindings = <
-&none  &none     &none     &none      &none           &none    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp STAR               &kp AMPERSAND  &kp RIGHT_BRACE  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp PLUS        &kp CARET             &kp PERCENT            &kp DOLLAR     &kp COLON        &none
-&none  &none     &none     &none      &none           &none    &kp PIPE        &kp HASH              &kp AT_SIGN            &kp EXCL       &kp TILDE        &none
+&none  &none     &none     &none      &none           &none    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp STAR               &kp AMPERSAND  &kp RIGHT_BRACE    &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp PLUS        &kp CARET             &kp PERCENT            &kp DOLLAR     &kp DOUBLE_QUOTES  &none
+&none  &none     &none     &none      &none           &none    &kp PIPE        &kp HASH              &kp AT_SIGN            &kp EXCL       &kp TILDE          &none
                            &none      &none           &none    &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
 
