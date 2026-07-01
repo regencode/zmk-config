@@ -25,7 +25,6 @@
             tapping-term-ms = <165>;
             hold-trigger-key-positions = <39 40 41 19 30 18 6 9 20 32 31 7 8 21 33 34 35 22 23 11 10>;
             flavor = "tap-preferred";
-            hold-while-undecided;
         };
 
         hmr: homewrow_mods_right {
@@ -37,7 +36,6 @@
             tapping-term-ms = <165>;
             hold-trigger-key-positions = <0 0 1 1 2 2 16 28 37 38 29 17 4 4 5 3 14 12 13 27 15 26 25 24 36>;
             flavor = "tap-preferred";
-            hold-while-undecided;
         };
     };
 
@@ -172,10 +170,10 @@
 
         qwerty_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O  &kp P      &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K  &kp L  &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-                      &kp ESC  &kp BACKSPACE  &kp ENTER    &kp TAB  &kp SPACE  &kp DELETE
+&none  &kp Q  &kp W  &kp E    &kp R          &kp T        &kp Y    &kp U      &kp I       &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D    &kp F          &kp G        &kp H    &kp J      &kp K       &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C    &kp V          &kp B        &kp N    &kp M      &kp COMMA   &kp DOT  &kp SLASH  &none
+                     &kp ESC  &kp BACKSPACE  &kp ENTER    &kp TAB  &kp SPACE  &kp DELETE
             >;
 
             label = "QWERTY";
